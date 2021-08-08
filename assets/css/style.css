@@ -134,11 +134,18 @@
 #text-home-left{
     margin-top: 20px;
     text-align: justify;
+    display:none;
 }
 
 #button-home-left{
     margin-top: 20px;
     background: var(--color-1);
+    border-radius: 10px;
+}
+
+#button-home-left:hover{
+    background: transparent;
+    transition-duration: 0.3s;
 }
 
 #container-home-right{
@@ -166,7 +173,7 @@
 }
 
 #logo-about-left{
-    width:25%
+    width:15%
 }
 
 #title-about-left{
@@ -179,7 +186,7 @@
 }
 
 .about-right-cards {
-    padding: 20px;
+    padding: 30px;
   box-shadow: 0px 0px 20px 0px rgba(150, 149, 149, 0.3);
   border-radius: 0px 0px 0px 50px;
 }
@@ -214,6 +221,10 @@
     margin-bottom: 15px;
 }
 
+#text-skills-left {
+    text-align: justify;
+}
+
 #container-skills-card{
     margin-top: 15px;
     width: 100%;
@@ -229,9 +240,11 @@
     align-items: center;
     width: 25%;
     padding: 15px;
-    background-color: var(--color-2);
+    background-color: white;
+    color: black;
     border-radius: 15px;
     margin: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
 }
 
 
@@ -304,13 +317,65 @@
     background:#fff;
 }
 
-
-/* ADICIONAL */
-
-
-#text-home-left{
-    display:none;
+#favorite {
+    color: #631527;
+    font-weight: bold;
 }
+
+#container-portfolio-left h4 span{
+    color: #631527;
+}
+
+#portfolio-box-item {
+    background: #fff;
+    box-shadow: 0px 10px 10px rgba(17, 17, 17, 0.3);
+    border-radius: 10px;
+
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#img-portfolio {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#language-used {
+    margin-bottom: 20px;
+}
+
+#language-item {
+    color: #631527;
+    border: 1px solid #631527;
+    border-radius: 10px;
+    font-size: 16px;
+
+    padding: 5px;
+}
+
+#redirect {
+    width: 35px;
+    border: 1px solid #631527;
+    border-radius: 10px;
+
+    padding: 5px;
+}
+
+.fa-angle-double-down {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#favorite2 {
+    color: #631527;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* RESPONSIVE */
 
 @media (min-width: 1366px) {
     *{
@@ -435,7 +500,7 @@
 }
 
 #logo-about-left{
-    width: 100px;
+    width: 10%;
     /* animation-name: logo;
     animation-duration: 3s;
     animation-iteration-count: infinite; */
@@ -477,10 +542,11 @@
     min-width: 125px;
     min-height: 125px;
     padding: 15px;
-    background-color: var(--color-2);
+    background-color: white;
+    color: black;
     border-radius: 15px;
     margin: 15px;
-    /* box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3); */
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.3);
 }
 
 .skills-icons{
@@ -513,7 +579,7 @@
 }
 
 #img-skills-right{
-    width: 75%;
+    width: 40%;
 }
 
 ::-webkit-scrollbar{
@@ -524,5 +590,86 @@
     background: var(--color-1);
   }
 
+/* SECCION PORTAFOLIO */
+
+#portfolio-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+#container-portfolio-left {
+    width: 500px;
+    z-index: 99;
+}
+
+#container-portfolio-right {
+    position: absolute;
+    left: 600px;
+}
+
+#img-portfolio {
+    width: 550px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#portfolio-item-2{
+    display: flex;
+    flex-direction: row;
+}
+
+#container-portfolio-left-2 {
+    width: 500px;
+    z-index: 99;
+    position: absolute;
+    left: 1150px;
+    text-align: right;
+}
+
+#container-portfolio-right-2 {
+    position: absolute;
+    right: 600px;
+}
+
+#info-portfolio {
+    margin-bottom: 70px;
+}
+
+#info-portfolio h1 {
+    font-size: 36px;
+}
+
+.fa-angle-double-down {
+    font-size: 100px;
+    position: absolute;
+    left: 1000px;
+    padding-bottom: 500px;
+}
+
+#favorite2 {
+    color: #631527;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.container{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.skills-card:hover {
+    transition: background-color .2s linear, color .2s linear;
+    background: #631527;
+    color: white;
+    cursor: pointer;
+}
 
 }
