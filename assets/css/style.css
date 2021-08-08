@@ -1,0 +1,528 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: PT Sans;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    /* scroll-margin-top: 9.9vh; */
+}
+
+/* VARIABLES GLOBALES DE COLORES */
+
+:root{
+    --main-color: #111;
+    --color-1: #631527;
+    --color-3: #642638;
+    --color-2: #4D134D;
+}
+
+#main-container{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 10vh repeat(4,minmax(90vh,auto));
+    background: var(--main-color);
+}
+
+/* CLASE GENERAL BOTON */
+
+#navbar{
+    grid-row: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+
+
+    z-index: 2;
+
+    position: sticky;
+    top:0;
+
+    transition: background .1s, color .1s;
+}
+
+.nav-transparent{
+    background: transparent;
+    color: #fff;
+}
+
+.nav-dark{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.nav-light{
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+#navbar-brand p{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#navbar-button{
+    font-size: 24px;
+}
+
+#navbar-items{
+    display: none;
+    position: absolute;
+    top: 9.9vh;
+    left: 0;
+    width: 100%;
+
+    background-color: inherit;
+    color: inherit;
+}
+
+.navbar-item{
+    display: block;
+    color: inherit;
+    padding: 15px 30px;
+}
+
+/* PARTICULAS */
+
+#particles-js{
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.button{
+    color: #fff;
+    padding: 15px;
+    border: 1px solid var(--color-1);
+    font-family: PT Sans ;
+}
+
+.container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    z-index: 1;
+    font-size: 18px;
+}
+
+#container-home{
+    color: #fff;
+}
+
+#container-home-left{
+    display: flex;
+    justify-content: center;
+
+    flex-direction:column;
+    text-align: center;
+    min-height: 40vh;
+    max-height: auto;
+}
+
+#title-home-left{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+}
+
+#text-home-left{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#button-home-left{
+    margin-top: 20px;
+    background: var(--color-1);
+}
+
+#container-home-right{
+    min-height: 50vh;
+    max-height: auto;
+}
+
+#img-home-right{
+    width: 100%;
+}
+
+#container-about{
+    background: #fff;
+}
+
+#container-about-left{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+}
+
+#img-about-left{
+    width: 100%;
+}
+
+#logo-about-left{
+    width:25%
+}
+
+#title-about-left{
+    margin-left: 15px;
+    font-size: 34px;
+}
+
+#container-about-right{
+    padding-top:30px;
+}
+
+.about-right-cards {
+    padding: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(150, 149, 149, 0.3);
+  border-radius: 0px 0px 0px 50px;
+}
+
+.cards-title{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.cards-text{
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* HABILIDADES SECCION */
+
+#container-skills{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#container-skills-right, #container-skills-left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-skills-left{
+    margin-bottom: 15px;
+}
+
+#container-skills-card{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding: 15px;
+    background-color: var(--color-2);
+    border-radius: 15px;
+    margin: 15px;
+}
+
+
+.skills-icons{
+    width:49%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.skills-card-title{
+   width: 100%;
+   text-align: center;
+   font-size: 14px;
+   font-weight: normal;
+}
+
+#title-skills-left{
+    font-size: 34px;
+    letter-spacing: 5px;
+}
+
+#container-skills-right{
+    margin-top:15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration-skills{
+    font-weight: bold;
+    width: 100%;
+}
+
+.decoration-skills:first-child:before{
+    content: "1.";
+}
+
+
+.decoration-skills:nth-child(2){
+    text-align: center;
+}
+
+.decoration-skills:nth-child(2):before{
+    content: "2."
+    
+}
+
+.decoration-skills:nth-child(3){
+    text-align: right;
+}
+
+.decoration-skills:nth-child(3):before{
+    content: "3."
+}
+
+#img-skills-right{
+    width: 75%;
+}
+
+#code-skills{
+    position: absolute;
+    margin-top: 160%;
+    left: 10%;
+    font-size: 100px;
+    color: var(--color-1);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+#container-portfolio{
+    background:#fff;
+}
+
+
+/* ADICIONAL */
+
+
+#text-home-left{
+    display:none;
+}
+
+@media (min-width: 1366px) {
+    *{
+        font-size: 18px;
+    }
+    
+    #navbar-button{
+        display: none;
+    }
+
+    #navbar-items{
+        width: 100%;
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-item:hover{
+        transform: translateY(-10px);
+    }
+
+    #navbar-brand p{
+        letter-spacing: 5px;
+    }
+
+    .navbar-item{
+        display: inline-block;
+        transition: transform .2s ease-in;
+    }
+
+    #container-home{
+        flex-direction: row;
+        padding:50px
+    }
+
+    #container-home-left, #container-home-right{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        background-origin: padding-box;
+    }
+    #title-home-left{
+        text-align: left;
+        font-family: PT  Sans;
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin:0px;
+    }
+    #text-home-left{
+        display: block;
+        margin-top:15px;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    #text-home-right{
+        display: none;
+    }
+
+    .button{
+        background: red;
+        width: fit-content;
+        border: 2px solid var(--color-1);
+    }
+    #button-home-left{
+        margin: 0px;
+    }
+    #img-home-right{
+    width: 70%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    #sesguno {
+        position:absolute;
+        top:85vh;
+        left: 0;
+        border-width: 15vh 0 0 99.6vw;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+    }
+
+
+/* SECCION NOSOTROS */
+
+#container-about{
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#container-about-left, #container-about-right{
+    color: #000;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+#container-about-right p {
+    font-size: 18px;
+}
+
+#title-about-left{
+    font-size: 36px;
+    margin-left: 20px;
+    letter-spacing: 7px;
+}
+
+#img-about-left{
+    width: 100%;
+}
+
+#img-about-left svg{
+    width: 100%;
+    height: fit-content;
+}
+
+#logo-about-left{
+    width: 100px;
+    /* animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes logo {
+    from{transform: rotate(0deg);}
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* SECCION HABILIDADES */
+
+#container-skills{
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+#container-skills-right, #container-skills-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-skills-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 125px;
+    min-height: 125px;
+    padding: 15px;
+    background-color: var(--color-2);
+    border-radius: 15px;
+    margin: 15px;
+    /* box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3); */
+}
+
+.skills-icons{
+    width: 100%;
+    text-align: center;
+}
+
+.skills-card-title{
+   width: 100%;
+   text-align: center;
+   font-weight: normal;
+}
+
+#title-skills-left{
+    font-size: 34px;
+    letter-spacing: 5px;
+}
+
+#container-skills-right{
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.decoration-skills:first-child{
+    text-align: right;
+}
+.decoration-skills:nth-child(3){
+    text-align: left;
+}
+
+#img-skills-right{
+    width: 75%;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-1);
+  }
+
+
+}
