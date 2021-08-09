@@ -592,27 +592,22 @@
 
 /* SECCION PORTAFOLIO */
 
-#container-portfolio {
 
-    padding: 10%;
-
-}
 
 #portfolio-item {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    justify-content: center;
 }
 
 #container-portfolio-left {
     width: 30%;
     z-index: 99;
-
 }
 
 #container-portfolio-right {
-
+    position: absolute;
+    left: 30%;
 }
 
 #img-portfolio {
@@ -626,25 +621,19 @@
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    width: 100%;
-    justify-content: center;
 }
 
 #container-portfolio-left-2 {
-    width: 30%;
+    width: 25%;
     z-index: 99;
+    position: absolute;
+    left: 60%;
     text-align: right;
-
-
 }
 
 #container-portfolio-right-2 {
-
-    width: 30%;
-    z-index: 99;
-
-
-    
+    position: absolute;
+    right: 30%;
 }
 
 #info-portfolio {
