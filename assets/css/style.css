@@ -602,16 +602,17 @@
     display: flex;
     flex-direction: row;
     margin-top: 40px;
+    justify-content: center;
 }
 
 #container-portfolio-left {
     width: 30%;
     z-index: 99;
+
 }
 
 #container-portfolio-right {
-    position: absolute;
-    left: 30%;
+
 }
 
 #img-portfolio {
@@ -633,12 +634,14 @@
     width: 30%;
     z-index: 99;
     text-align: right;
-    position: absolute;
-    right: 20%;
+
 
 }
 
 #container-portfolio-right-2 {
+
+    width: 30%;
+    z-index: 99;
 
 
     
