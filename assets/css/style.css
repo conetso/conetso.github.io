@@ -605,7 +605,7 @@
 
 #container-portfolio-right {
     position: absolute;
-    left: 600px;
+    left: 30%;
 }
 
 #img-portfolio {
@@ -624,13 +624,13 @@
     width: 500px;
     z-index: 99;
     position: absolute;
-    left: 1150px;
+    left: 65%;
     text-align: right;
 }
 
 #container-portfolio-right-2 {
     position: absolute;
-    right: 600px;
+    right: 30%;
 }
 
 #info-portfolio {
