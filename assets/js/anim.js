@@ -64,3 +64,71 @@ window.onscroll = (e) => {
 
 }
 
+// SCROLL REVEAL
+
+window.sr = ScrollReveal();
+
+
+    sr.reveal('#main__nav', {
+
+        duration:2000,
+        origin:'bottom',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('.about__right__cards', {
+
+        duration:2000,
+        origin:'bottom',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('#about__left', {
+
+        duration:2000,
+        origin:'right',
+        distance: '-100px'
+
+    });home__left
+
+    sr.reveal('#home__left', {
+
+        duration:2000,
+        origin:'right',
+        distance: '-100px'
+
+    })
+
+    sr.reveal('#home__right', {
+
+        duration:2000,
+        origin:'left',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('#main__projects', {
+
+        duration:2000,
+        origin:'bottom',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('#main__contact', {
+
+        duration:2500,
+        origin:'right',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('#wsp-btn', {
+
+        duration:2500,
+        origin:'left',
+        distance: '-100px'
+
+    });
