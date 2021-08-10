@@ -12,10 +12,6 @@
 
     /* BARRA DE NAVEGACION */
 
-    #main {
-        background: #111;
-    }
-
     .main__container{
         padding: 100px;
     }
@@ -231,6 +227,8 @@
     
     #main__contact {
         padding-left: 25%;
+        padding-right: 25%;
+        background: #fff;
     }
 
     .contact-form form {

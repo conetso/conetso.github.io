@@ -269,7 +269,8 @@
 /* SECCION DE CONTACTO */
 
 #main__contact {
-    padding: 20%;
+    padding: 10%;
+    background: #fff;
 }
 
 .contact-form form {

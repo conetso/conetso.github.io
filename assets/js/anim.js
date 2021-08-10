@@ -68,15 +68,6 @@ window.onscroll = (e) => {
 
 window.sr = ScrollReveal();
 
-
-    sr.reveal('#main__nav', {
-
-        duration:2000,
-        origin:'bottom',
-        distance: '-100px'
-
-    });
-
     sr.reveal('.about__right__cards', {
 
         duration:2000,
@@ -109,7 +100,7 @@ window.sr = ScrollReveal();
 
     });
 
-    sr.reveal('#main__projects', {
+    sr.reveal('#container-portfolio-right', {
 
         duration:2000,
         origin:'bottom',
@@ -117,7 +108,15 @@ window.sr = ScrollReveal();
 
     });
 
-    sr.reveal('#main__contact', {
+    sr.reveal('#container-portfolio-left', {
+
+        duration:2000,
+        origin:'bottom',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('.contact-wrapper', {
 
         duration:2500,
         origin:'right',
@@ -129,6 +128,14 @@ window.sr = ScrollReveal();
 
         duration:2500,
         origin:'left',
+        distance: '-100px'
+
+    });
+
+    sr.reveal('#info-portfolio', {
+
+        duration:2000,
+        origin:'right',
         distance: '-100px'
 
     });
