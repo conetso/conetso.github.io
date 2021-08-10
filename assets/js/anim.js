@@ -1,49 +1,52 @@
 
-var nav = document.getElementById("navbar");
-var nav_height = nav.offsetHeight;
-var containers = document.getElementsByClassName("container");
-window.addEventListener("scroll", (e)=>{
-    if (window.pageYOffset == 0){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-transparent");
-    }
-    else if (window.pageYOffset > containers[3].offsetTop-nav_height-1){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-light");
-    }    
-    else if (window.pageYOffset > containers[2].offsetTop-nav_height-1){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-dark");
-    }
-    else if (window.pageYOffset > containers[1].offsetTop-nav_height-1){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-light");
-    }
-    else if (window.pageYOffset > containers[0].offsetTop-nav.offsetHeight && window.pageYOffset > 0){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-dark");
-    }
 
-    if (nav_menu.style.display == "block" ){
-        nav.removeAttribute("class");
-        nav.classList.add("nav-dark");
-    }
-})
+// MENU MOVIL
 
+var nav_btn = document.getElementById("nav__button");
+var nav_menu = document.getElementById("nav__items");
 
-var nav_btn = document.getElementById("navbar-button");
-var nav_menu = document.getElementById("navbar-items");
-
-var compStyles = window.getComputedStyle(nav_menu);
+var nav_menu_styles = window.getComputedStyle(nav_menu);
 
 nav_btn.addEventListener("click", (e)=>{
-
-    if (compStyles.getPropertyValue("display") == "none" ){
-        nav_menu.style = "display: block";
-        nav.removeAttribute("class");
-        nav.classList.add("nav-dark");
-    }
-    else{
+    if (nav_menu_styles.getPropertyValue("display") == "none"){
+        nav_menu.style = "display: flex";
+        console.log("done");
+    } else {
         nav_menu.style = "display: none";
     }
-})
+});
+
+// SESGADO ADECUADO
+
+var sesg = document.getElementById("sesg");
+var about = document.getElementById("main__about");
+sesg.style = "top: calc(" + about.offsetTop +"px - " + sesg.offsetHeight + "px)";
+window.onresize = (e)=>{
+    sesg.style = "top: calc(" + about.offsetTop +"px - " + sesg.offsetHeight + "px)";
+    if (nav_menu_styles.getPropertyValue("display") == "flex"){
+        nav_menu.removeAttribute("style");
+    }
+}
+
+
+// CAMBIO DE NAVBAR
+
+var navbar = document.getElementById("main__nav");
+var section = document.getElementsByClassName("main__container");
+
+window.onscroll = (e) => {
+
+    if (window.pageYOffset > section[3].offsetTop-navbar.offsetHeight-1){
+        navbar.style = "background: #fff; color: var(--main-color);";
+    }
+    else if (window.pageYOffset > section[2].offsetTop-navbar.offsetHeight-1){
+        navbar.style = "background: var(--main-color); color: #fff;";
+    }
+    else if (window.pageYOffset > section[1].offsetTop-navbar.offsetHeight-1){
+        navbar.style = "background: #fff; color: var(--main-color);";
+    }
+    else {
+        navbar.style = "background: var(--main-color); color: #fff;";
+    }
+
+}

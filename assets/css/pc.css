@@ -1,0 +1,113 @@
+@media (min-width: 1366px) {
+
+    #sesg{
+        display: block;
+        position:absolute;
+        /* top:85vh; */
+        left: 0;
+        border-width: 15vh 0 0 99.6vw;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+    }
+
+    /* BARRA DE NAVEGACION */
+
+    .main__container{
+        padding: 100px;
+    }
+
+    #main__nav{
+        padding: 15px 30px;
+        transition: background .2s, color .2s;
+    }
+
+    #nav__button{
+        display: none;
+    }
+
+    #nav__items{
+        position: static;
+        display: block;
+        height: auto;
+
+        text-align: right;  
+    }
+
+    .nav__items__item{
+        display: inline-block;
+        padding: 15px;
+        transition: transform .2s ease-in;
+    }
+
+    .nav__items__item:hover{
+        transform: translateY(-10px);
+    }
+
+    /* SECCION DE HOME */
+
+    #main__home{
+        flex-direction: row;
+    }
+
+    #home__left{
+        align-items: flex-start;
+    }
+
+    #home__left__button{
+        width: fit-content;
+        border-radius: 5px;
+    }
+
+    #home__left__title{
+        text-align: left;
+        font-family: PT Sans;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    #home__left__text{
+        display: block;
+        margin-top: 15px;
+
+        text-align: justify;
+    }
+
+    #home__right__img{
+        width: 70%;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    #home__right__text{
+        display: none;
+    }
+
+    /* SECCION NOSOTROS */
+
+    #main__about{
+        flex-direction: row;
+    }
+
+    #about__left, #about__right{
+        padding: 0px 50px;
+    }
+
+    #about__left__title{
+        font-size: 36px;
+    }
+
+    #about__left__img{
+        margin-top: 30px;
+    }
+
+
+    /* SCROLL */
+
+    ::-webkit-scrollbar{
+        width:5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--color-1);
+      }
+    
+}

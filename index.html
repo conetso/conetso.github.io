@@ -1,176 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONETSO</title>
 
-    <!-- OWN STYLES -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/Logo.svg"/>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 
-    <!-- FONTAWESOME -->
-    <script src="https://kit.fontawesome.com/7f553152b5.js" crossorigin="anonymous"></script>
-
+    <!-- OWN STYLE -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pc.css">
 </head>
 <body>
-    <div id="sesguno"></div>
+    <div id="sesg"></div>
     <div id="particles-js"></div>
-    <div id="main-container">
-        <nav id="navbar" class="nav-transparent">
-            <div id="navbar-brand">
-                <p id="navbar-brand-text"> CONETSO </p>
+    <main id="main">
+        <nav id="main__nav"> 
+            <div id="nav__brand"> 
+                <h1 id="nav__brand__title">CONETSO</h1> 
             </div>
-            <i class="fas fa-bars" id="navbar-button"></i>
-            <div id="navbar-items">
-                <a href="#" class="navbar-item">Inicio</a>
-                <a href="#container-about" class="navbar-item">Nosotros</a>
-                <a href="#container-skills" class="navbar-item">Habilidades</a>
-                <a href="#container-portfolio" class="navbar-item">Portafolio</a>
-                <a href="#" class="navbar-item">Contacto</a>
+                <i class="fas fa-bars" id="nav__button"></i>
+            <div id="nav__items">
+                <a href="#" class="nav__items__item"> <i class="fas fa-home"></i>Inicio</a>
+                <a href="#main__about" class="nav__items__item"> <i class="fas fa-users"></i> Nosotros</a>
+                <a href="#main__projects" class="nav__items__item"><i class="fas fa-rocket"></i>Proyectos</a>
+                <a href="#main__contact" class="nav__items__item"><i class="fab fa-wpforms"></i>Contacto</a>
             </div>
         </nav>
-        <section class="container" id="container-home">
-            <div id="container-home-left">
-                <h2 id="title-home-left"> CONECTAMOS TUS PROBLEMAS CON SOLUCIONES WEB </h2>
-                <p id="text-home-left">Aprovecha esta oportunidad y forma parte de la revolucion tecnologica con nosotros, lograras integrarte al mercado actual y mejorar tus ganancias</p>
-                <a href="#" class="button" id="button-home-left"> Conocer más </a>
+        <section class="main__container" id="main__home">
+            <div id="home__left"> 
+                <h2 id="home__left__title"> CONECTAMOS TUS PROBLEMAS CON SOLUCIONES WEB</h2>
+                <p id="home__left__text"> Aprovecha esta oportunidad y forma parte de la revolucion tecnologica con nosotros, lograras integrarte al mercado actual y mejorar tus ganancias</p>
+                <a href="#" class="button" id="home__left__button"> Conocer más</a>
             </div>
-            <div id="container-home-right">
-                <img src="assets/img/Computer.svg" alt="Conetso Computer" id="img-home-right"> 
-                <p id="text-home-right">Aprovecha esta oportunidad y forma parte de la revolucion tecnologica con nosotros, lograras integrarte al mercado actual y mejorar tus ganancias</p>
-
+            <div id="home__right"> 
+                <img src="assets/img/Computer.svg" alt="Computer CONETSO" id="home__right__img">
+                <p id="home__right__text"> Aprovecha esta oportunidad y forma parte de la revolucion tecnologica con nosotros, lograras integrarte al mercado actual y mejorar tus ganancias</p>
             </div>
         </section>
-        <section class="container" id="container-about">
-            <div id="container-about-left">
-                <div style="display: flex; flex-direction: row; align-items: center;">
-                    <img src="assets/img/Logo.svg" id="logo-about-left" alt="">
-                    <h2 id="title-about-left"> NOSOTROS </h2>
-                </div>
-                <img src="assets/img/About.svg" alt="" id="img-about-left">
+        <section class="main__container" id="main__about">
+            <div id="about__left"> 
+                <h2 id="about__left__title"> <img src="assets/img/Logo.svg" alt="Logo CONETSO" id="about__left__logo">NOSOTROS </h2>
+                <img src="assets/img/About.svg" alt="About CONETSO" id="about__left__img">
             </div>
-            <div id="container-about-right">
-                <div class="about-right-cards">
-                    <h3 class="cards-title">¿Qué es CONETSO?</h3>
-                    <p class="cards-text">Es un proyecto de emprendimiento freelancer conformado por un grupo de personas, que surge ante la escaces de oportunidades laborales para desarrolladores web sin experiencia en trabajos anteriores.</p>
-                </div>
-                <br>
-                <div class="about-right-cards">
-                    <h3 class="cards-title">¿Por qué elegirnos?</h3>
-                    <p class="cards-text">Somos un grupo de autodidactas de la internet por lo que ante cualquier tipo de proyecto nos podemos adaptar y ante cualquier problema la solucion siempre vamos a encontrar.</p>
-                </div>
-                <br>
-                <div class="about-right-cards">
-                    <h3 class="cards-title">¿Qué puedes esperar de nosotros?</h3>
-                    <p class="cards-text"> Puedes esperar trabajo pulcro, concreto y acorde a lo que tú, el cliente pidas, nuestra prioridad siempre sera mantenerte a ti feliz con el resultado.</p>
+            <div id="about__right"> 
+                <div class="about__right__cards">
+                    <div class="cards__card">
+                        <h3 class="cards__card__title">¿Qué es CONETSO?</h3>
+                        <p class="cards__card__text">Es un proyecto de emprendimiento freelancer conformado por un grupo de personas, que surge ante la escaces de oportunidades laborales para desarrolladores web sin experiencia en trabajos anteriores.</p>
+                    </div>
+                    <div class="cards__card">
+                        <h3 class="cards__card__title">¿Por qué elegirnos?</h3>
+                        <p class="cards__card__text">Somos un grupo de autodidactas de la internet por lo que ante cualquier tipo de proyecto nos podemos adaptar y ante cualquier problema la solucion siempre vamos a encontrar.</p>
+                    </div>
+                    <div class="cards__card">
+                        <h3 class="cards__card__title">¿Qué puedes esperar de nosotros?</h3>
+                        <p class="cards__card__text">Puedes esperar trabajo pulcro, concreto y acorde a lo que tú, el cliente pidas, nuestra prioridad siempre sera mantenerte a ti feliz con el resultado.</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="main__container" id="main__projects"></section>
+        <section class="main__container" id="main__contact"></section>
 
-        <section class="container" id="container-skills">
-            <div id="container-skills-left">
-                <h2 id="title-skills-left"> HABILIDADES </h2>
-                <p id="text-skills-left">Estamos en constante aprendizaje de nuevos lenguajes y metodologias desde nuestros tiempos libres hasta estudios técnicos, tecnologicos o universitarios, ya que el mercado así lo requiere por su constante movimiento, para brindarle la mejor experiencia con el resultado final.</p>
-                <br>
-                <div id="container-skills-card">
-                    <div class="skills-card">
-                        <i class="fab fa-html5 skills-icons" id="html"> </i>
-                        <h3 class="skills-card-title"> HTML </h3>
-                    </div>
-                    <div class="skills-card">
-                        <i class="fab fa-css3-alt skills-icons" id="css"></i>
-                        <h3 class="skills-card-title"> CSS </h3>
-                    </div>
-                    <div class="skills-card">
-                        <i class="fab fa-js-square skills-icons" id="js"></i>
-                        <h3 class="skills-card-title"> JS </h3>
-                    </div>
-                    <div class="skills-card">
-                        <i class="fab fa-bootstrap skills-icons" id="bootstrap"></i>
-                        <h3 class="skills-card-title"> BOOTSTRAP </h3>
-                    </div>
-                    <div class="skills-card">
-                        <i class="fab fa-php skills-icons" id="php"></i>
-                        <h3 class="skills-card-title"> PHP </h3>
-                    </div>
-                    <div class="skills-card">
-                        <i class="fas fa-database skills-icons" id="mysql"></i>
-                        <h3 class="skills-card-title"> MySQL </h3>
-                    </div>
-                </div>
-            </div>
-            <div id="container-skills-right">
-                <span class="decoration-skills"> PIENSA </span>
-                <span class="decoration-skills"> CODIFICA </span>
-                <span class="decoration-skills"> DEPURA </span>
-                <img src="assets/img/skills3.svg" alt="" id="img-skills-right">
+    </main>
 
-            </div>
-        </section>
-
-        <section class="container" id="container-portfolio">
-
-            <div id="info-portfolio">
-                <h1>PROYECTOS</h1>
-                <br>
-                <p>Algunos <span id="favorite">productos</span> increibles, para personas increibles.</p>
-                <br>
-                <h1>TODO LO QUE HEMOS <span id="favorite2">CONSTRUIDO.</span></h1>   
-                <i class="fas fa-angle-double-down"></i>
-            </div>
-
-            <div id="portfolio-item">
-            <div id="container-portfolio-right">
-                <div id="container-items">
-                    <img src="https://i.imgur.com/xJyrApm.png" alt="" srcset="" id="img-portfolio"><br>
-                </div>
-            </div>
-
-            <div id="container-portfolio-left">
-                <p id="favorite">Proyecto Destacado</p>
-                <h4>Proyecto CARPEDIEM</h4><br>
-                <div id="portfolio-box-item">
-                    <p>Este proyecto es una Single Page App, desarrollada en Vuejs v2 Con el objetivo de ver el valor de las criptomonedas, buscar mejores intercambios y presenta un grafico del estado actual de cada criptomoneda.</p>
-                </div>
-                <div id="language-used">
-                    <span id="language-item">JavaScript</span>
-                    <span id="language-item">PHP</span>
-                    <span id="language-item">MYSQL</span>
-                </div>
-                <img src="assets/img/redirect.svg" id="redirect" alt="">
-            </div>
-            </div>
-
-            <div id="portfolio-item-2">
-                <div id="container-portfolio-right-2">
-                    <div id="container-items">
-                        <img src="https://i.imgur.com/xJyrApm.png" alt="" srcset="" id="img-portfolio"><br>
-                    </div>
-                </div>
-
-                <div id="container-portfolio-left-2">
-                    <p id="favorite">Proyecto Destacado</p>
-                    <h4>Proyecto CARPEDIEM</h4><br>
-                    <div id="portfolio-box-item">
-                        <p>Este proyecto es una Single Page App, desarrollada en Vuejs v2 Con el objetivo de ver el valor de las criptomonedas, buscar mejores intercambios y presenta un grafico del estado actual de cada criptomoneda.</p>
-                    </div>
-                    <div id="language-used">
-                        <span id="language-item">JavaScript</span>
-                        <span id="language-item">PHP</span>
-                        <span id="language-item">MYSQL</span>
-                    </div>
-                    <img src="assets/img/redirect.svg" id="redirect" alt="">
-                </div>
-            </div>
-    </section>
-
-    </div>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/7f553152b5.js" crossorigin="anonymous"></script>
+    <!-- PARTICULAS -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <!-- JAVASCRIPT PROPIO -->
     <script src="assets/js/anim.js"></script>
 </body>
 </html>
