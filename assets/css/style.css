@@ -259,6 +259,9 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
+.triangle {
+    display: none;
+}
 
 #favorite2 {
     color: #631527;
