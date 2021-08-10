@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
     scroll-behavior: smooth;
-    /* scroll-margin-top: 9.9vh; */
+    scroll-margin-top: 9vh;
 
     font-family: PT Sans;
     text-decoration: none;

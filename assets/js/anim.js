@@ -16,6 +16,19 @@ nav_btn.addEventListener("click", (e)=>{
     }
 });
 
+
+// CERAR NAVBAR AL CLICK
+
+var nav_btn_styles = window.getComputedStyle(nav_btn);
+
+nav_menu.addEventListener("click", (e)=>{
+    if (nav_btn_styles.getPropertyValue("display") != "none"){
+        nav_menu.style = "display:none";
+    } else {
+        
+    }
+});
+
 // SESGADO ADECUADO
 
 var sesg = document.getElementById("sesg");
@@ -23,7 +36,7 @@ var about = document.getElementById("main__about");
 sesg.style = "top: calc(" + about.offsetTop +"px - " + sesg.offsetHeight + "px)";
 window.onresize = (e)=>{
     sesg.style = "top: calc(" + about.offsetTop +"px - " + sesg.offsetHeight + "px)";
-    if (nav_menu_styles.getPropertyValue("display") == "flex"){
+    if (nav_menu_styles.getPropertyValue("display") == "flex" || nav_menu_styles.getPropertyValue("display") == "none"){
         nav_menu.removeAttribute("style");
     }
 }
@@ -50,3 +63,4 @@ window.onscroll = (e) => {
     }
 
 }
+
